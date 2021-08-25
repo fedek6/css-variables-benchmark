@@ -26,6 +26,7 @@ You can install `http-server`
 
 ```bash
 npm install -g http-server
+cd bundle
 http-server ./
 ```
 
