@@ -28,4 +28,6 @@ export const replaceDynamic = async (filePath: string, colors: string[]) => {
     from: [/\{\{css\}\}/g, /\{\{html\}\}/g],
     to: [css, html],
   });
+
+  return true;
 };

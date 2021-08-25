@@ -39,11 +39,12 @@ const colors = randomColor({
   count
 });
 
-try {
-  replaceStatic(staticFile, colors);
-  replaceDynamic(dynamicFile, colors);
-} catch(e) {
-  console.error(e);
-}
+replaceStatic(staticFile, colors)
+  .then(() => console.log("Static file is ready!"))
+  .catch(e => console.error(e));
+
+replaceDynamic(dynamicFile, colors)
+  .then(() => console.log("Dynamic file is ready!"))
+  .catch(e => console.error(e));
 
 console.log("All done!");
