@@ -5,7 +5,13 @@
   "repository": "git@github.com:fedek6/css-variables-benchmark.git",
   "author": "Konrad Fedorczyk <contact@realhe.ro>",
   "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
   "devDependencies": {
+    "@types/node": "^16.7.1",
+    "ts-node": "^10.2.1",
     "tsc": "^2.0.3",
     "typescript": "^4.3.5"
   }
