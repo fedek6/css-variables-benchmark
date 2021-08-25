@@ -16,7 +16,18 @@ You should get two files in `bundle` directory.
 
 Now use your browser` [tools](https://developer.chrome.com/docs/devtools/evaluate-performance/) to benchmark which runs faster.
 
+## Running web server
+
 You can use `VSC` [Go Live](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plugin to run it in browser.
+
+Or...
+
+You can install `http-server`
+
+```bash
+npm install -g http-server
+http-server ./
+```
 
 ## Build
 
