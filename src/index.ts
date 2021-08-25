@@ -7,7 +7,7 @@ import { replaceDynamic } from "./dynamic";
 let count = parseInt(process.argv[3]);
 
 if (!count || isNaN(count)) {
-  count = 10000;
+  count = 5000;
 }
 
 console.log("Using template from", path.resolve("./src/template.html"));

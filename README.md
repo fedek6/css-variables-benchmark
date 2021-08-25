@@ -2,6 +2,8 @@
 
 This is simple CSS variables benchmark generator. It generates `n` colored squares in two flavors, one with classic CSS and other using CSS variables. 
 
+> Note: colors are reused once for better benchmarking.
+
 Clone and:
 
 ```bash

@@ -23,6 +23,9 @@ export const replaceDynamic = async (filePath: string, colors: string[]) => {
   }\n
   ${css}`;
 
+  // Reuse same colors
+  html += html;
+
   await replaceInFile({
     files: filePath,
     from: [/\{\{css\}\}/g, /\{\{html\}\}/g],

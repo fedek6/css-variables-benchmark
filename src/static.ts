@@ -14,6 +14,9 @@ export const replaceStatic = async (filePath: string, colors: string[]) => {
     html += `<div class="${className}"><span>${v}</span></div>`;
   });
 
+  // Reuse same colors
+  html += html;
+
   await replaceInFile({
     files: filePath,
     from: [/\{\{css\}\}/g, /\{\{html\}\}/g],
