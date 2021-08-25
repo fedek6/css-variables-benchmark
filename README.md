@@ -63,7 +63,7 @@ Google Chrome Version 92.0.4515.159 (Official Build) (64-bit)
 
 ### Dynamic CSS
 
-|     | Loading | Scripting | Rendering | Painting | System | Idle  | Total |
+| Try | Loading | Scripting | Rendering | Painting | System | Idle  | Total |
 | --- | ------- | --------- | --------- | -------- | ------ | ----- | ----- |
 | 1   | 33      | 3         | 381       | 16       | 110    | 4906  | 5449  |
 | 2   | 38      | 2         | 358       | 20       | 114    | 4962  | 5494  |
