@@ -17,3 +17,12 @@ You should get two files in `bundle` directory.
 Now use your browser` [tools](https://developer.chrome.com/docs/devtools/evaluate-performance/) to benchmark which runs faster.
 
 You can use `VSC` [Go Live](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plugin to run it in browser.
+
+## Build
+
+You can build this repo to run it faster:
+
+```bash
+yarn build
+node dist/index.js -- 666
+```
