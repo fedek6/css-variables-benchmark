@@ -50,7 +50,7 @@ Linux
 Google Chrome Version 92.0.4515.159 (Official Build) (64-bit)
 ```
 
-### Static CSS
+### Static CSS (ms)
 
 | Try | Loading | Scripting | Rendering | Painting | System | Idle  | Total |
 | --- | ------- | --------- | --------- | -------- | ------ | ----- | ----- |
@@ -61,7 +61,7 @@ Google Chrome Version 92.0.4515.159 (Official Build) (64-bit)
 | 5   | 31      | 4         | 332       | 18       | 112    | 4944  | 5441  |
 | SUM | 152     | 18        | 1643      | 80       | 569    | 24713 | 27175 |
 
-### Dynamic CSS
+### Dynamic CSS (ms)
 
 | Try | Loading | Scripting | Rendering | Painting | System | Idle  | Total |
 | --- | ------- | --------- | --------- | -------- | ------ | ----- | ----- |
