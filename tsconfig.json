@@ -9,6 +9,7 @@
     "noImplicitAny": true,
     "declaration": true,
     "noImplicitReturns": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "esModuleInterop": true
   }
 }
