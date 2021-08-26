@@ -7,6 +7,7 @@ export const replaceStatic = async (
 ) => {
   let css = "";
   let html = "";
+  let outputHtml = "";
 
   colors.forEach((v, i) => {
     const className = `colored-${i}`;
@@ -19,14 +20,14 @@ export const replaceStatic = async (
   });
 
   // Reuse same colors
-  for (let i = 0; i++; i < reuseFactor) {
-    html += html;
+  for (let i = 0; i < reuseFactor; i++) {
+    outputHtml += html;
   }
 
   await replaceInFile({
     files: filePath,
     from: [/\{\{css\}\}/g, /\{\{html\}\}/g],
-    to: [css, html],
+    to: [css, outputHtml],
   });
 
   return true;
