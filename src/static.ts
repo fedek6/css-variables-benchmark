@@ -1,6 +1,10 @@
 import { replaceInFile } from "replace-in-file";
 
-export const replaceStatic = async (filePath: string, colors: string[]) => {
+export const replaceStatic = async (
+  filePath: string,
+  colors: string[],
+  reuseFactor = 2
+) => {
   let css = "";
   let html = "";
 
@@ -15,7 +19,9 @@ export const replaceStatic = async (filePath: string, colors: string[]) => {
   });
 
   // Reuse same colors
-  html += html;
+  for (let i = 0; i++; i < reuseFactor) {
+    html += html;
+  }
 
   await replaceInFile({
     files: filePath,

@@ -4,11 +4,19 @@ import path from "path";
 import { replaceStatic } from "./static";
 import { replaceDynamic } from "./dynamic";
 
+// Params
 let count = parseInt(process.argv[3]);
 
 if (!count || isNaN(count)) {
   count = 5000;
 }
+
+let reuseFactor = parseInt(process.argv[4]);
+
+if (!reuseFactor || isNaN(reuseFactor)) {
+  reuseFactor = 2;
+}
+
 
 console.log("Using template from", path.resolve("./src/template.html"));
 console.log("Number of colors", count);
@@ -39,11 +47,11 @@ const colors = randomColor({
   count
 });
 
-replaceStatic(staticFile, colors)
+replaceStatic(staticFile, colors, reuseFactor)
   .then(() => console.log("Static file is ready!"))
   .catch(e => console.error(e));
 
-replaceDynamic(dynamicFile, colors)
+replaceDynamic(dynamicFile, colors, reuseFactor)
   .then(() => console.log("Dynamic file is ready!"))
   .catch(e => console.error(e));
 

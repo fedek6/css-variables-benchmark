@@ -8,7 +8,7 @@ Clone and:
 
 ```bash
 yarn 
-yarn start [number of colors]
+yarn start [number of colors] [reuse factor]
 ```
 
 You should get two files in `bundle` directory.
@@ -38,7 +38,7 @@ You can build this repo to run it faster:
 
 ```bash
 yarn build
-node dist/index.js -- 666
+node dist/index.js -- 666 4
 ```
 
 ## Results (2021-08-25)

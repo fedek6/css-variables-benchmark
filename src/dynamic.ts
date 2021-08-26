@@ -1,6 +1,10 @@
 import { replaceInFile } from "replace-in-file";
 
-export const replaceDynamic = async (filePath: string, colors: string[]) => {
+export const replaceDynamic = async (
+  filePath: string,
+  colors: string[],
+  reuseFactor = 2
+) => {
   let rootCss = "";
   let css = "";
   let html = "";
@@ -24,7 +28,9 @@ export const replaceDynamic = async (filePath: string, colors: string[]) => {
   ${css}`;
 
   // Reuse same colors
-  html += html;
+  for (let i = 0; i++; i < reuseFactor) {
+    html += html;
+  }
 
   await replaceInFile({
     files: filePath,
